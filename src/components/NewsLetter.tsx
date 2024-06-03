@@ -10,6 +10,7 @@ const NewsLetter: React.FC = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     alert(`Thank you for subscribing with ${email}`);
+    setEmail("");
   };
 
   return (
@@ -18,7 +19,7 @@ const NewsLetter: React.FC = () => {
      flex items-center justify-center"
     >
       <form onSubmit={handleSubmit}>
-        <label htmlFor="email" className="text-eggshell-white text-xl">
+        <label htmlFor="email" className="text-white text-xl">
           Stay informed! Join our Newsletter!
         </label>
         <br />
@@ -29,7 +30,7 @@ const NewsLetter: React.FC = () => {
           onChange={handleInputChange}
           placeholder="Enter your email"
           required
-          className="p-1 m-2 text-black"
+          className="px-4 py-1.5 m-2 text-black rounded-full"
         />
         <input type="submit" value="Subscribe" className={`${buttonClasses}`} />
       </form>

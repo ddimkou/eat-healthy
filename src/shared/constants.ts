@@ -4,8 +4,8 @@ export const buttonClasses = `
   text-base 
   uppercase 
   no-underline 
-  py-4 
-  px-10 
+  py-1.5
+  px-6
   inline-block 
   rounded-full 
   transition-all 
@@ -14,9 +14,7 @@ export const buttonClasses = `
   font-medium 
   text-black 
   bg-white 
-  hover:-translate-y-1 
-  hover:shadow-md 
-  active:translate-y-0.5 
+  active:translate-y-0.5
   active:shadow-sm
   after:content-[""] 
   after:inline-block 
