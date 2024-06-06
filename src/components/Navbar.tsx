@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white text-forest-green font-bold flex items-center justify-between px-4 md:px-16 shadow-md">
+    <nav className="z-30 bg-white text-forest-green font-bold flex items-center justify-between px-4 md:px-16 shadow-md relative">
       {/* logo */}
       <div className="bg-logobg bg-cover bg-center w-16 h-16 md:w-20 md:h-20"></div>
       {/* hamburger menu btn */}
@@ -47,7 +47,7 @@ const Navbar = () => {
       <ul
         className={`${
           isOpen ? "flex" : "hidden"
-        } md:flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 cursor-pointer text-sm absolute md:relative top-16 md:top-0 right-0 md:left-auto bg-white md:bg-transparent py-4 md:py-0 px-5 md:px-0 shadow-md md:shadow-none z-10`}
+        } md:flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 cursor-pointer text-sm absolute md:relative top-16 md:top-0 right-0 md:left-auto bg-white md:bg-transparent py-4 md:py-0 px-5 md:px-0 shadow-md md:shadow-none z-30`}
       >
         <li
           onClick={handleMenuItemClick}
