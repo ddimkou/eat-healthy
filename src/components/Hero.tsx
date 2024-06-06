@@ -2,7 +2,7 @@ import BlobAnimation from "./BlobAnimation";
 
 const Hero = () => {
   return (
-    <div className="blobContainer flex flex-col xl:flex-row items-center justify-center xl:justify-between relative">
+    <div className="blobContainer flex flex-col xl:flex-row items-center justify-center xl:justify-between relative h-[90vh]">
       {/* text w background */}
       <div className="xl:bg-white w-full px-12 py-6 z-10 flex flex-col items-center xl:items-start text-center xl:text-left">
         <div className="text-cranberry-red xl:text-forest-green font-bold">

@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="z-30 bg-white text-forest-green font-bold flex items-center justify-between px-4 md:px-16 shadow-md relative">
+    <nav className="z-30 bg-white text-forest-green font-bold flex items-center justify-between px-4 md:px-16 shadow-md relative h-[10vh]">
       {/* logo */}
       <NavLink to="/" className="flex items-center">
         <div className="bg-logobg bg-cover bg-center w-16 h-16 md:w-20 md:h-20"></div>
@@ -77,14 +77,14 @@ const Navbar = () => {
         </li>
         <li onClick={handleMenuItemClick}>
           <NavLink
-            to="/lifestyle"
+            to="/search"
             className={({ isActive }) =>
               isActive
                 ? "text-cranberry-red hover:text-cranberry-red transition-colors duration-300"
                 : "hover:text-meadow-green transition-colors duration-300"
             }
           >
-            Lifestyle
+            Recipes
           </NavLink>
         </li>
         <li onClick={handleMenuItemClick}>
