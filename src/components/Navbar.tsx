@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,31 +53,37 @@ const Navbar = () => {
           onClick={handleMenuItemClick}
           className="hover:text-cranberry-red transition-colors duration-300"
         >
-          About
+          <Link to="/">Home</Link>
         </li>
         <li
           onClick={handleMenuItemClick}
           className="hover:text-cranberry-red transition-colors duration-300"
         >
-          Lifestyle
+          <Link to="/about">About</Link>
         </li>
         <li
           onClick={handleMenuItemClick}
           className="hover:text-cranberry-red transition-colors duration-300"
         >
-          Contact
+          <Link to="/lifestyle">Lifestyle</Link>
         </li>
         <li
           onClick={handleMenuItemClick}
           className="hover:text-cranberry-red transition-colors duration-300"
         >
-          Test1
+          <Link to="/contact">Contact</Link>
         </li>
         <li
           onClick={handleMenuItemClick}
           className="hover:text-cranberry-red transition-colors duration-300"
         >
-          Test2
+          <Link to="/introduction">Introduction</Link>
+        </li>
+        <li
+          onClick={handleMenuItemClick}
+          className="hover:text-cranberry-red transition-colors duration-300"
+        >
+          <Link to="/test">Test</Link>
         </li>
       </ul>
     </nav>
