@@ -8,8 +8,10 @@ export default {
         "meadow-green": "#6a994e", // vibrant green
         "lime-green": "#a7c957", // yellowish-green
         "eggshell-white": "#f2e8cf", // light beige
+        "ivory-beige": "#f7e9c6", // dark beige
         "cranberry-red": "#bc4749", //  deep red
       },
+
       backgroundImage: {
         herobg: "url('./assets/landing.png')",
         logobg: "url('./assets/logoEat.png')",
