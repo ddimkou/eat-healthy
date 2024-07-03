@@ -30,3 +30,5 @@ export const buttonClasses = `
   hover:after:scale-[1.6] 
   hover:after:opacity-0
 `;
+
+export const buttonLabel = `bg-cranberry-red text-white font-semibold py-1 px-2 my-1 rounded-full`;

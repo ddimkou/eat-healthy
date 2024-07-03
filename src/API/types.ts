@@ -4,6 +4,16 @@ export interface Recipe {
   uri: string;
   calories: number;
   ingredients: Ingredient[];
+  totalWeight: number;
+  totalTime: number;
+  dietLabels: string[];
+  totalNutrients: {
+    [key: string]: {
+      label: string;
+      quantity: number;
+      unit: string;
+    };
+  };
 }
 
 export interface Ingredient {
