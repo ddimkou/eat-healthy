@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import SearchPage from "./components/SearchPage";
+import RecipeDetails from "./components/RecipeDetails";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/search" element={<SearchPage />} />
+          <Route path="/recipe/:id" element={<RecipeDetails />} />
           <Route path="/" element={<Introduction />} />
         </Routes>
         {/* <NewsLetter /> */}

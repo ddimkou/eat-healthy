@@ -11,6 +11,8 @@ const SearchPage = () => {
   const handleSearch = async (searchQuery: string) => {
     try {
       const data = await fetchRecipes(searchQuery);
+      // console log
+      console.log("Response data:", data);
       setResults(data);
     } catch (error) {
       console.error("Error fetching recipes:", error);
